@@ -10,7 +10,7 @@ const port = process.env.PORT || 6002;
 const app=express();
 
 const corsOptions = {
-    origin: process.env.CORS_ORIGIN,
+    origin: process.env.CORS_ORIGIN || "https://stackkaroo-ten.vercel.app",
     optionsSuccessStatus: 200,
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: "Content-Type, Authorization",
